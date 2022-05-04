@@ -14,7 +14,7 @@ set clipboard=unnamed
 set wrap
 set linebreak
 set showcmd
-set scrolloff=6
+set scrolloff=4
 
 " About Tab
 set splitbelow
@@ -35,3 +35,11 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Key Map
 imap jkl <Esc>
+
+call plug#begin()
+Plug 'preservim/nerdtree'
+Plug 'kien/ctrlp.vim'
+Plug 'tomtom/tcomment_vim'
+Plug 'dracula/vim',{'as':'dracula'}
+call plug#end()
+colorscheme dracula
