@@ -1,5 +1,5 @@
 syntax on
-colorscheme elflord
+colorscheme industry
 
 set nu
 set noerrorbells
@@ -9,7 +9,7 @@ set noswapfile
 set incsearch
 set ignorecase
 set nohlsearch
-set clipgboard=unnamed
+set clipboard=unnamed
 
 set wrap
 set linebreak
@@ -32,10 +32,6 @@ filetype plugin on
 " Delete space
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Plugins
-call plug#begin()
-Plug 'preservim/nerdtree'
-Plug 'kien/ctrlp.vim'
-Plug 'tomtom/tcomment_vim'
-Plug 'python-mode/python-mode'
-call plug#end()
+
+" Key Map
+imap jkl <Esc>
