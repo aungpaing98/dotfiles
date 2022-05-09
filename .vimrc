@@ -25,9 +25,11 @@ set expandtab
 set smartindent
 
 
+" File type
 filetype on
 filetype indent on
 filetype plugin on
+
 
 " Delete space
 autocmd BufWritePre * :%s/\s\+$//e
@@ -35,6 +37,15 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Key Map
 imap jkl <Esc>
+
+"Split window
+nmap ss :split<Return><C-w>w
+nmap sv :vsplit<Return><C-w>w
+nmap <Space> <C-w>w
+map s<left> <C-w>h
+map s<right> <C-w>l
+map s<up> <C-w>k
+map s<down> <C-w>j
 
 call plug#begin()
 Plug 'preservim/nerdtree'
