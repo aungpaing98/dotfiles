@@ -49,7 +49,6 @@ nmap t1 :normal! yyp<S-v>r=<cr>
 nmap t2 :normal! yyp<S-v>r-<cr>
 " Move item to top
 nmap m1 :normal! jmmkdd{p`m<cr>
-nmap sop :normal: source %<cr>
 
 
 " Split Window
@@ -83,8 +82,4 @@ Plug 'kien/ctrlp.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'python-mode/python-mode'
 Plug 'dracula/vim',{'as':'dracula'}
-Plug 'ycm-core/YouCompleteMe'
 call plug#end()
-
-" colorscheme dracula
-colorscheme dracula
