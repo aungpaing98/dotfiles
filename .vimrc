@@ -35,6 +35,10 @@ filetype plugin on
 " Show file name
 set laststatus=2
 
+" Plugin Keymaps
+" NerdTree
+nmap <C-n> :NERDTree<CR>
+nmap <C-t> :NERDTreeToggle<CR>
 
 " Key Map
 imap jkl <Esc>
@@ -80,6 +84,5 @@ call plug#begin()
 Plug 'preservim/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'tomtom/tcomment_vim'
-Plug 'python-mode/python-mode'
 Plug 'dracula/vim',{'as':'dracula'}
 call plug#end()
